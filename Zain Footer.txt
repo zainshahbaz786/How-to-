@@ -1,0 +1,34 @@
+<html>
+
+
+<div id="menu-outer">
+  <div class="table">
+    <ul id="horizontal-list">
+       <li><i class="fab fa-github"></i><a href="https://github.com/zainshahbaz786" style="text-decoration:none"><b>ZainShahbaz786</b></a></li>
+       <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/zain-shahbaz-874712165/?fbclid=IwAR1txxx2p-y7NKKE0KFhKUvmNrJLTpl2nl_HwAsCLzYJQFoMShhwweqxMiU" style="text-decoration:none"><b>ZainShahbaz</b></a></li>
+       <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/zain__shahbaz/" style="text-decoration:none"><b>zain__shahbaz</b></a></li>
+                   </ul>
+  </div>
+</div>
+
+
+
+<css>
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}

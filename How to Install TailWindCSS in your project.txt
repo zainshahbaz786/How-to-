@@ -1,0 +1,36 @@
+Installing TailwindCSS as PostCSS Plugin
+
+1)Install JSON FILE as  npm init -y
+//Here we mention our dependencies
+2) npm install tailwindcss
+
+3)npm install autoprefixer
+4)npm install postcss-cli
+//Now we need configuration file of tailwindcss and postcss config file
+5) npx tailwindcss init -p
+
+6)Create two folders "public" and "src"
+7)add file to src as css file of any named(style.css or tailwind.css) and index,html in public 
+
+8)add code to tailwind.css in src file :
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+//here it is used for custom css
+9)NOW prepared a build script for program to run.So go on package.json and in "scripts":{"build":	" postcss ./src/tailwind.css -o ./public/tailwind.css"
+10)It generate a file in public as named tailwind.css that contain code of css
+
+11) npm run build 
+used to run the project files so tailwind,css file would be created
+
+
+12) FOr reducing the size of the project, npm install win-node-env
+13)Go to package.json file and write a script after build 	
+"Prod":NODE_ENV=production postcss ./src/tailwind.css -o ./public/tailwind.css "
+
+14)Go to tailwind.config.js  
+purge:['./public/**/*.html',]
+15)  Now run as npm run prod 
